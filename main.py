@@ -217,7 +217,10 @@ class CamConfig:
 def CamConfig_init():
     window.f_type = CamConfig()
 
-
+def GetData():
+    global COUNTER,TOTAL,mCOUNTER,mTOTAL,ActionCOUNTER,Roll,Rolleye,Rollmouth,statu,action
+    # data = f"{TOTAL},{mTOTAL},{ActionCOUNTER},{statu},{action}"
+    return TOTAL,mTOTAL,ActionCOUNTER,statu,action #statu,action是字符串，其他的都是整型
 
 if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)
